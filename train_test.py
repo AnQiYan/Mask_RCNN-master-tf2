@@ -103,7 +103,7 @@ class DrugDataset(utils.Dataset):
             self.add_image("shapes", image_id=i, path=img_floder + "/" + imglist[i],
                            width=cv_img.shape[1], height=cv_img.shape[0], mask_path=mask_path, yaml_path=yaml_path)
 
-    # 重写load_mask
+    # 重写load_mask方法
     def load_mask(self, image_id):
         """Generate instance masks for shapes of the given image ID.
         """
